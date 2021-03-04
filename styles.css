@@ -1,39 +1,105 @@
 * {
-    box-sizing:border-box;
-    padding: 0;
-    margin: 0;
-}
-ul {
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-}
-.upper-header {
-    background-color: grey;
-    height: 100px;
-}
-.container-width {
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-}
-.upper-header .actions {
-    display: flex;
-}
-.upper-header .flex {
-justify-content: space-between;
-}
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/* Nav bar*/
+/* Navbar*/
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.upper-header {
+  background-color: grey;
+  height: 100px;
+}
+
+.container-width {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.upper-header .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.upper-header .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.sup-btn {
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+  border-radius: 5px;
+  padding: 17px 35px;
+  margin: 10px;
+}
+
+.con-btn {
+  color: #fff;
+  background-color: #999aa2;
+  border-color: #999aa2;
+  padding: 17px 38px;
+  margin: 10px;
+}
+
+.searchterm {
+  padding: 5px 15px;
+  margin: 10px;
+  height: 52px;
+}
+
+.searchbutton {
+  display: inline-block;
+  padding: 7px 20px 3px;
+  height: 51px;
+  position: relative;
+  left: -25px;
+  margin: 10px;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  vertical-align: bottom;
+  background-color: #999aa2;
+  color: #fff;
+}
+
+.burger-menu {
+  height: 56px;
+  background-color: #333645;
+  border-color: #333645;
+  color: #fff;
+}
+
 /*Nav lower*/
+.lower-header {
+  background-color: #333645;
+}
+
 /*Banner image*/
 /*Main services*/
 /*# sourceMappingURL=styles.css.map */
