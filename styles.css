@@ -101,5 +101,10 @@ a {
 }
 
 /*Banner image*/
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*Main services*/
 /*# sourceMappingURL=styles.css.map */
