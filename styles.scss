@@ -81,10 +81,17 @@ margin: 10px;
 }
 
 /*Banner image*/
-.hero-img{
-    max-width: 100%;
-    height: auto;
-}
 
+.banner-image {
+    position: relative;
+    text-align: center;
+    color: white;
 
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    transform: translate(-50%, -50%);
+  }
 /*Main services*/ 

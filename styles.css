@@ -101,9 +101,18 @@ a {
 }
 
 /*Banner image*/
-.hero-img {
-  max-width: 100%;
-  height: auto;
+.banner-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*Main services*/
