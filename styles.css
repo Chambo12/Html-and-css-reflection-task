@@ -286,6 +286,19 @@ a {
           box-shadow: 0 0 0 400px #2ecc71;
 }
 
+.digital-btn {
+  color: #fff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+
 .main-services .box-2:nth-child(4) .icon {
   -webkit-box-shadow: 0 0 0 0 #d64541;
           box-shadow: 0 0 0 0 #d64541;
@@ -295,6 +308,19 @@ a {
 .main-services .box-2:nth-child(4):hover .icon {
   -webkit-box-shadow: 0 0 0 400px #d64541;
           box-shadow: 0 0 0 400px #d64541;
+}
+
+.telecoms-btn {
+  color: #fff;
+  background-color: #d64541;
+  border-color: #d64541;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
 }
 
 .main-services .box-2:nth-child(5) .icon {
@@ -308,6 +334,19 @@ a {
           box-shadow: 0 0 0 400px #926fb1;
 }
 
+.web-btn {
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+
 .main-services .box-2:nth-child(6) .icon {
   -webkit-box-shadow: 0 0 0 0 #f62459;
           box-shadow: 0 0 0 0 #f62459;
@@ -319,6 +358,19 @@ a {
           box-shadow: 0 0 0 400px #f62459;
 }
 
+.cyber-btn {
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+
 .main-services .box-2:nth-child(7) .icon {
   -webkit-box-shadow: 0 0 0 0 #926fb1;
           box-shadow: 0 0 0 0 #926fb1;
@@ -328,6 +380,19 @@ a {
 .main-services .box-2:nth-child(7):hover .icon {
   -webkit-box-shadow: 0 0 0 400px #926fb1;
           box-shadow: 0 0 0 400px #926fb1;
+}
+
+.developer-btn {
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
 }
 
 .main-services .box .content {
