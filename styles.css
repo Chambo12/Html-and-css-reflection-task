@@ -142,6 +142,21 @@ a {
   text-align: center;
 }
 
+.main-services .box-2 {
+  position: relative;
+  width: 250px;
+  padding: 40px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
 .main-services .box:before {
   content: '';
   width: 50%;
@@ -154,7 +169,42 @@ a {
   pointer-events: none;
 }
 
+.main-services .box-2:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  pointer-events: none;
+}
+
 .main-services .box .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main-services .box-2 .icon {
   position: relative;
   width: 80px;
   height: 80px;
@@ -230,18 +280,5 @@ a {
 .main-services .box:hover .content p {
   margin: 0;
   padding: 0;
-}
-
-a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  margin-top: 20px;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=styles.css.map */
