@@ -22,7 +22,7 @@ a {
 }
 
 .upper-header {
-  background-color: grey;
+  background-color: #fff;
   height: 100px;
 }
 
@@ -512,5 +512,111 @@ a {
   width: 150px;
   height: 39px;
   text-transform: uppercase;
+}
+
+/*Latest Bar*/
+/*article section*/
+.article-1 {
+  height: 100vh;
+  width: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-1 {
+  background: white;
+  height: 583.86px;
+  width: 350px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-1 img {
+  height: 45%;
+  width: 100%;
+  background-size: 400px 300px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  padding: 20px;
+}
+
+.title a {
+  color: #2ecc71;
+  font-weight: 600px;
+  text-decoration: underline;
+}
+
+.article {
+  padding-left: 21px;
+}
+
+.article p {
+  font-family: Poppins,sans-serif;
+  letter-spacing: .4px;
+  color: #666;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 0 10px;
+  margin-bottom: 25px;
+  min-height: 66px;
+  line-height: 1.375rem;
+  font-size: .8125rem;
+}
+
+.article-btn {
+  padding: 30px 23px;
+}
+
+.article-btn a {
+  font-weight: 600px;
+  color: #fff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  height: auto;
+  line-height: 35px;
+  padding: 15px 7px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+hr {
+  display: block;
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: isolate;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.avatar img {
+  width: 15%;
+  margin: 22px;
+  float: left;
+}
+
+.info {
+  padding: 28px;
+  line-height: 1.375rem;
 }
 /*# sourceMappingURL=styles.css.map */
