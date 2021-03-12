@@ -3,6 +3,13 @@
     padding: 0;
     margin: 0;
 }
+
+.body{
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    color: #666;
+}
 /* Navbar*/
 ul {
     list-style-type: none;
@@ -111,6 +118,7 @@ margin: 10px;
     box-sizing: border-box;
     overflow: hidden;
     text-align: center;
+    max-height: 333px;
 }
 
 .main-services .box-2 {
@@ -124,6 +132,7 @@ margin: 10px;
     box-sizing: border-box;
     overflow: hidden;
     text-align: center;
+    max-height: 303px;
 }
 
 .main-services .box:before {
@@ -197,6 +206,7 @@ border-color: #67809f;
 height: auto;
 line-height: 35px;
 padding: 5px 15px;
+margin: -10px;
 text-transform: uppercase;
 font-size: 1.063rem;
 border-radius: 3px;
@@ -215,7 +225,6 @@ white-space: normal;
 color: #fff;
 background-color: #67809f;
 border-color: #67809f;
-height: auto;
 line-height: 35px;
 padding: 5px 15px;
 text-transform: uppercase;
@@ -277,7 +286,6 @@ white-space: normal;
 color: #fff;
 background-color: #926fb1;
 border-color: #926fb1;
-height: auto;
 line-height: 35px;
 padding: 5px 15px;
 text-transform: uppercase;
@@ -301,6 +309,7 @@ border-color: #f62459;
 height: auto;
 line-height: 35px;
 padding: 5px 15px;
+margin-top: 30px;
 text-transform: uppercase;
 font-size: 1.063rem;
 border-radius: 3px;
@@ -339,6 +348,8 @@ white-space: normal;
     transition: 0.5s;
 }
 
+
+
 .main-services .box:hover .content {
     color: #fff;
 }
@@ -346,44 +357,93 @@ white-space: normal;
     color: #fff;
 }
 
-.main-services .box:hover .content h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    padding: 0;
+.main-services .box:hover .content h2 {
+    font-size: 1.125rem;
+    position: relative;
+    padding-bottom: 17px;
+    margin: 0 0 11px;
 }
 
-.main-services .box-2:hover .content h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    padding: 0;
+.main-services .box-2:hover .content h2 {
+    font-size: 1.125rem;
+    position: relative;
+    padding-bottom: 17px;
+    margin: 0 0 11px;
 }
+
+.main-services .box .content p {
+display: block;
+padding: 10px;
+margin: 10px;
+}
+
 
 .main-services .box:hover .content p {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .main-services .box-2:hover .content p {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
 }
 
 /*Culture section*/
+.netmatters-info{
+    background-color:#333645;
+}
 .background-brand {
     background-color:#333645;
-    background-repeat: no-repeat;
-}
-
-.culture {
     color: #fff;
-    width: 50%;
-    float: left;
+    text-align: left;
     position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
-.culture h1 {
+.about-us{
+    position:absolute;
+    top: 50px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.about-us h1{
+    letter-spacing: .4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    line-height: 1.1;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0 0 25px;
     text-transform: uppercase;
-
+    color: #fff;
+    margin-top: -6px;
 }
+
+.about-us p{
+    letter-spacing: .4px;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+ 
+}
+.about-us a{
+    color:#000;
+    font-size: 1.063rem;
+}
+.about-us button{
+    width: 150px;
+    height: 39px;
+    text-transform: uppercase;
+}
+
+/*Latest Bar*/ 
+.latest-bar{
+    box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+}
+
+
+ 
+
+
+
+
+
