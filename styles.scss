@@ -29,15 +29,17 @@ a {
 }
 .upper-header .actions {
     display: flex;
+    
 }
 .upper-header .flex {
-justify-content: space-between;
+    justify-content: space-between;
 }
 .flex {
-    display: flex;
+        display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+
 }
 .sup-btn {
 color: #fff;
@@ -45,20 +47,25 @@ background-color: #4183d7;
 border-color: #4183d7;
 border-radius: 5px;
 padding: 17px 35px;
-margin: 10px;
+margin: 20px;
+float: left;
 }
+
 
 .con-btn {
     color: #fff;
     background-color: #999aa2;
     border-color: #999aa2;
+    border-radius: 5px;
     padding: 17px 38px;
-    margin: 10px;
+    margin: 20px;
+    float: left;
     
 }
+
 .searchterm {
-    padding: 5px 15px;
-    margin: 10px;
+    padding: 10px 15px;
+    margin: 20px;
     height: 52px;
 }
 .searchbutton {
