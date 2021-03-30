@@ -17,95 +17,130 @@ ul {
 a {
     text-decoration: none;
 }
-.upper-header {
-    background-color: #fff;
-    height: 100px;
-}
 .container-width {
     max-width: 1300px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
 }
-.upper-header .actions {
+.upper-header {
+    background-color: #fff;
+    height: 110px;
     display: flex;
-    
+    justify-content:space-between
 }
-.upper-header .flex {
-    justify-content: space-between;
-}
-.flex {
-        display: flex;
-    justify-content: center;
+.logo-container{
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 100%;
+    padding-right: 10px;
+    margin-right: 5rem;
+}
+.interface{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5rem;
+}
+.support-btn{
+    display: flex;
+    color: #fff;
+    background-color: #4183d7;
+    border-color: #4183d7;
+    border-radius: 3px;
+    padding: 5px 15px; 
+    margin-right: 1rem;
+}
+.sup-btn{
+    color: #fff;
+    line-height: 40px;
+    font-size: 1.150rem;
+}
+.support-btn:hover {
+    background-color: #2a6ec6;
+    cursor: pointer;
+}
+.fas{
+    font-size: 1.438rem;
+    line-height: 45px;
 
 }
-.sup-btn {
-color: #fff;
-background-color: #4183d7;
-border-color: #4183d7;
-border-radius: 5px;
-padding: 17px 35px;
-margin: 20px;
-float: left;
-}
-
-
-.con-btn {
+.contact-btn{
+    display: flex;
+    justify-content: center;
     color: #fff;
     background-color: #999aa2;
     border-color: #999aa2;
-    border-radius: 5px;
-    padding: 17px 38px;
-    margin: 20px;
-    float: left;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-right: 1rem;
+}
+.con-btn{
+    color:#fff;
+    line-height: 40px;
+    font-size: 1.150rem;
+}
+.contact-btn:hover{
+    background-color: #84858f;
+    cursor: pointer;
+}
+form.example input[type=text]{
+    padding: 13px;
+    font-size: 20px;
+    border: 1px solid grey;
+    width: 80%;
+    background: #f1f1f1;
     
 }
-
-.searchterm {
-    padding: 10px 15px;
-    margin: 20px;
-    height: 52px;
-}
-.searchbutton {
-    display: inline-block;
-    padding: 7px 20px 3px;
-    height: 51px;
-    position: relative;
-    left: -25px;
-    margin: 10px;
-    border-radius: 0 3px 3px 0;
-    border: none;
-    vertical-align: bottom;
+form.example button {
+    float: right;
+    width: 20%;
+    padding: 13px;
     background-color: #999aa2;
-    color: #fff;
+    color: white;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+
 }
-.burger-menu {
-    height: 56px;
+.btn {
+    color: #fff;
     background-color: #333645;
-    border-color: #333645;
-    color: #fff;
-}
-.fa.fa-bars {
-}
+    border: none;
+    padding: 10px;
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+
+  }
+  
+
+
+
+
+
+
 /*Nav lower*/
 .lower-header {
     background-color: #333645;
     height: 100px;
 }
 
-.list-items{
-    position: relative;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-left: 1px solid hsla(0,0%,100%,.1);
-    border-right: 1px solid rgba(0,0,0,.25);
+    color: #fff;
 }
+.web{
+}
+
+
+
 
 
 /*Banner image*/

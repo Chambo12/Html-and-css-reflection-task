@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styles.scss">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://kit.fontawesome.com/ec994d8bc0.js" crossorigin="anonymous"></script>
 
 
 
@@ -20,33 +22,50 @@
   <!--Nav Bar-->
   <div class="page-container">
     <header>
-      <div class="upper-header">
-        <div class="container-width flex">
+      <div class="container-width flex">
+        <div class="upper-header">
           <div class="logo-container">
             <a class="logo" href="https://www.netmatters.co.uk">
               <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters">
             </a>
           </div>
-          <div class="actions">
+          <div class="interface">
             <div class="support-btn">
-              <a href="#support" class="sup-btn">SUPPORT</a>
+              <span>
+                <i class="fas fa-mouse"></i>
+              </span>
+              <span>
+                <a href="#support" class="sup-btn">SUPPORT</a>
+              </span>
             </div>
             <div class="contact-btn">
+              <span>
+                <i class="fa fa-paper-plane-o"></i>
+              </span>
+              <span>
                 <a href="#Contact" class="con-btn">CONTACT</a>
+              </span>
             </div>
-            <div class="search-field">
-              <div class="search">
-                <input type="text" class="searchterm" placeholder="Search...">
-                <button type="submit" class="searchbutton">
-                  <i class="fa fa-search"></i>
-                </button>
-              </div>
+            <div class="search">
+              <form class="example" action="action_page.php">
+                <span>
+                  <input type="text" placeholder="Search.." name="search">
+                </span>
+                <span>
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </span>
+              </form>
             </div>
             <div class="burger-menu">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-              <span class="title">Menu</span>
+              <button class="btn">
+                <span><i class="fa fa-bars fa-lg"></i></span>
+                <span>MENU</span></button>
             </div>
+
+
           </div>
+
+
         </div>
       </div>
     </header>
@@ -54,23 +73,46 @@
   <!--Main Nav Lower-->
   <div class="lower-header">
     <div class="container-width">
-      <div class="section-list">
-        <ul class="list-items">
-          <li>Web Design</li>
-          <li>IT Support</li>
-          <li>Telecoms Services</li>
-          <li>Bespoke Software</li>
-          <li>Digital Marketing</li>
-          <li>Cyber Security</li>
-        </ul>
-
-
-      </div>
+      <ul class="menu">
+        <li class="web">
+          <span><i class="fa fa-code"></i></span>
+          <small>Web</small>
+          <span>Design</span>
+        </li>
+        <li class="it">
+          <span>Icon</span>
+          <small>IT</small>
+          <span>SUPPORT</span>
+        </li>
+        <li class="telecoms">
+          <span>Icon</span>
+          <small>TELECOMS</small>
+          <span>SERVICES</span>
+        </li>
+        <li class="bespoke">
+          <span>Icon</span>
+          <small>BESPOKE</small>
+          <span>SOFTWARE</span>
+        </li>
+        <li class="digital">
+          <span>Icon</span>
+          <small>DIGITAL</small>
+          <span>MARKETING</span>
+        </li>
+        <li class="cyber">
+          <span>Icon</span>
+          <small>CYBER</small>
+          <span>SECURITY</span>
+        </li>
+      </ul>
     </div>
   </div>
+ 
+
   <!--Main Banner Image-->
   <div class="banner-image">
-    <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg" alt="marketing-image">
+    <img src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg"
+      alt="marketing-image">
     <div class="centered">
       <h1>DIGITAL MARKETING</h1>
       <P>Generating you new buisness through<br> results-driven marketing activities</P>
@@ -215,7 +257,8 @@
             <div class="user">
               <div class="avatar">
                 <img
-                  src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt="netmatters-user">
+                  src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png"
+                  alt="netmatters-user">
               </div>
             </div>
             <div class="info">
@@ -246,7 +289,8 @@
             <div class="user-2">
               <div class="avatar-2">
                 <img
-                  src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt="netmatters-user">
+                  src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png"
+                  alt="netmatters-user">
               </div>
             </div>
             <div class="info-2">
@@ -277,7 +321,8 @@
             <div class="user-3">
               <div class="avatar-3">
                 <img
-                  src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/bethany-shakespeare-F6Iu.jpg" alt="bethany-shakespeare-user">
+                  src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/bethany-shakespeare-F6Iu.jpg"
+                  alt="bethany-shakespeare-user">
               </div>
             </div>
             <div class="info-3">
@@ -375,23 +420,27 @@
       <div class="footer-info">
         <div class="l-column">
           <ul>
-            <li><h2>CONTACT US</h2></li>
-            <li><ul class="box"></li>
-              <li>11 Penfold Drive</li>
-              <li>Wymondham</li>
-              <li>Norfolk</li>
-              <li>NR18 0WZ</li>
-              <li>&nbsp;</li>
-              <li>
-                Tel:
-                <a href="tel:01603704020">
-                  01603 70 40 20</a>
-              </li>
-              <li>Email:
-                <a href="mailto:support@netmatters.com">
-                  support@netmatters.com</a>
-              </li>
-            </ul>
+            <li>
+              <h2>CONTACT US</h2>
+            </li>
+            <li>
+              <ul class="box">
+            </li>
+            <li>11 Penfold Drive</li>
+            <li>Wymondham</li>
+            <li>Norfolk</li>
+            <li>NR18 0WZ</li>
+            <li>&nbsp;</li>
+            <li>
+              Tel:
+              <a href="tel:01603704020">
+                01603 70 40 20</a>
+            </li>
+            <li>Email:
+              <a href="mailto:support@netmatters.com">
+                support@netmatters.com</a>
+            </li>
+          </ul>
           </ul>
         </div>
         <ul class="mid-column">
