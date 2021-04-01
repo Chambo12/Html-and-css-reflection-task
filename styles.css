@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-.body {
+body {
   font-family: Poppins,sans-serif;
   font-size: 1rem;
   letter-spacing: .4px;
@@ -63,13 +63,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 5rem;
 }
 
 .support-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   color: #fff;
   background-color: #4183d7;
   border-color: #4183d7;
@@ -95,9 +92,7 @@ a {
 }
 
 .contact-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -107,6 +102,10 @@ a {
   border-radius: 3px;
   padding: 5px 15px;
   margin-right: 1rem;
+}
+
+.contact-btn i {
+  font-size: 1.438rem;
 }
 
 .con-btn {
@@ -165,10 +164,10 @@ form.example button {
 /*Nav lower*/
 .lower-header {
   background-color: #333645;
-  height: 100px;
 }
 
 .menu {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +178,84 @@ form.example button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.menu li a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.menu li a small {
+  display: block;
+  font-size: .625rem;
+  padding-bottom: 1px;
+}
+
+.menu li a span {
+  display: block;
+  font-size: 1.438rem;
+  padding-bottom: 10px;
+}
+
+.web i {
+  color: #926fb1;
+}
+
+.it i {
+  color: #4183d7;
+}
+
+.telecoms .iconify {
+  color: #d64541;
+  font-size: 2rem;
+}
+
+.bespoke i {
+  color: #67809f;
+}
+
+.digital i {
+  color: #2ecc71;
+}
+
+.cyber i {
+  color: #f62459;
 }
 
 /*Banner image*/
@@ -190,9 +266,10 @@ form.example button {
 }
 
 .centered {
+  display: block;
   position: absolute;
   top: 50%;
-  right: 45%;
+  right: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }

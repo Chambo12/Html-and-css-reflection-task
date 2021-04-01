@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-.body{
+body{
     font-family: Poppins,sans-serif;
     font-size: 1rem;
     letter-spacing: .4px;
@@ -17,6 +17,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 .container-width {
     max-width: 1300px;
     margin: 0 auto;
@@ -40,10 +41,9 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 5rem;
 }
 .support-btn{
-    display: flex;
+    display:inline-block;
     color: #fff;
     background-color: #4183d7;
     border-color: #4183d7;
@@ -66,7 +66,7 @@ a {
 
 }
 .contact-btn{
-    display: flex;
+    display:inline-block;
     justify-content: center;
     color: #fff;
     background-color: #999aa2;
@@ -74,6 +74,9 @@ a {
     border-radius: 3px;
     padding: 5px 15px;
     margin-right: 1rem;
+}
+.contact-btn i{
+    font-size: 1.438rem;
 }
 .con-btn{
     color:#fff;
@@ -118,31 +121,75 @@ form.example button {
 
   }
   
-
-
-
-
-
-
 /*Nav lower*/
 .lower-header {
     background-color: #333645;
-    height: 100px;
 }
 
 .menu{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
+    padding: 0;
+    margin: 0;
 }
-.web{
+.menu li{
+    border-left: 1px solid hsla(0,0%,100%,.1);
+    border-right: 1px solid rgba(0,0,0,.25);
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu li a{
+    position: relative;
+    display:block;
+    padding: 20px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 
+.menu li a small{
+    display:block;
+    font-size: .625rem;
+    padding-bottom: 1px;
+}
 
+.menu li a span{
+    display:block;
+    font-size: 1.438rem;
+    padding-bottom: 10px;
+}
+.web i {
+    color: #926fb1;
 
+}
 
+.it i{ 
+    color: #4183d7;      
+}
+.telecoms .iconify{
+    color: #d64541;
+    font-size: 2rem;
+}
+.bespoke i{
+    color: #67809f;
+}
+.digital i{
+    color: #2ecc71;
+}
+.cyber i{
+    color: #f62459;
+}
 /*Banner image*/
 
 .banner-image {
@@ -152,9 +199,10 @@ form.example button {
 
   }
   .centered {
+    display: block;
     position: absolute;
     top: 50%;
-    right: 45%;
+    right: 50%;
     transform: translate(-50%, -50%);
   }
 /*Main services*/ 
