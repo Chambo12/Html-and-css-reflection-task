@@ -240,100 +240,220 @@ form.example button {
 }
 
 /*Nav lower*/
-.lower-header {
+#navlower {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  margin-top: 20px;
+  height: 99px;
   background-color: #333645;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #999aa2;
 }
 
-.menu {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#navlower a {
+  font-size: 16px;
   color: #fff;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.menu li a {
-  position: relative;
-  display: block;
-  padding: 20px;
-  color: #fff;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
-.menu li a small {
-  display: block;
-  font-size: .625rem;
-  padding-bottom: 1px;
+.subnavlower {
+  overflow: hidden;
 }
 
-.menu li a span {
-  display: block;
-  font-size: 1.438rem;
-  padding-bottom: 10px;
+.subnavlower .lower-nav-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: transparent;
+  font-family: poppins, sans-serif;
 }
 
-.web i {
+.subnavlower .lower-nav-btn span {
+  font-size: 10px;
+  padding: 5px 0 1px;
+  line-height: .3;
+}
+
+.subnavlower .lower-nav-btn .lower-nav-bar-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 99px;
+  width: 200px;
+}
+
+.subnavlower .lower-nav-btn .lower-nav-bar-tile .fas {
+  font-size: 20px;
+  margin: 5px auto 8px;
+}
+
+.subnavlower .lower-nav-btn .lower-nav-bar-tile:hover {
+  text-decoration: none;
+}
+
+.Web-nav {
+  border-left: 1px solid #484a58;
+}
+
+.Web-nav .fas {
   color: #926fb1;
 }
 
-.it i {
+.Web-nav:hover {
+  background-color: #926fb1;
+}
+
+.Web-nav:hover .fas {
+  color: #fff;
+}
+
+.IT-nav .fas {
   color: #4183d7;
 }
 
-.telecoms .iconify {
-  color: #d64541;
-  font-size: 2rem;
+.IT-nav:hover {
+  background-color: #4183d7;
 }
 
-.bespoke i {
+.IT-nav:hover .fas {
+  color: #fff;
+}
+
+.Telecoms-nav .fas {
+  color: #d64541;
+}
+
+.Telecoms-nav:hover {
+  background-color: #d64541;
+}
+
+.Telecoms-nav:hover .fas {
+  color: #fff;
+}
+
+.Software-nav .fas {
   color: #67809f;
 }
 
-.digital i {
+.Software-nav:hover {
+  background-color: #67809f;
+}
+
+.Software-nav:hover .fas {
+  color: #fff;
+}
+
+.Digital-nav .fas {
   color: #2ecc71;
 }
 
-.cyber i {
+.Digital-nav:hover {
+  background-color: #2ecc71;
+}
+
+.Digital-nav:hover .fas {
+  color: #fff;
+}
+
+.Cyber-nav {
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.Cyber-nav .fas {
   color: #f62459;
+}
+
+.Cyber-nav:hover {
+  background-color: #f62459;
+}
+
+.Cyber-nav:hover .fas {
+  color: #fff;
+}
+
+.subnavlower .Web-dropdown {
+  background-color: #7e57a0;
+}
+
+.subnavlower .IT-dropdown {
+  background-color: #2a6ec6;
+}
+
+.subnavlower .Telecoms-dropdown {
+  background-color: #bc2c28;
+}
+
+.subnavlower .Software-dropdown {
+  background-color: #566c88;
+}
+
+.subnavlower .Marketing-dropdown {
+  background-color: #25a25a;
+}
+
+.subnavlower .Cyber-dropdown {
+  background-color: #de093f;
+}
+
+/*Hidden nav*/
+.second-nav-links {
+  display: none;
+  position: absolute;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  top: 220px;
+  width: 100vw;
+  height: 44px;
+  font-size: 10px;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.second-nav-links a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.second-nav-links a:after {
+  content: "-";
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.subnavlower:hover .second-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*Banner image*/
@@ -378,6 +498,11 @@ form.example button {
   font-size: 1.25rem;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.centered button:hover {
+  background-color: #26ab5f;
+  border-color: #26ab5f;
 }
 
 /*Main services*/
@@ -1024,6 +1149,13 @@ article p {
   width: 100%;
 }
 
+.info {
+  font-weight: 600;
+  color: #333645;
+  line-height: 32px;
+  width: 100%;
+}
+
 .required {
   color: #d64541;
 }
@@ -1227,6 +1359,10 @@ article p {
 .footer-top ul {
   padding: 0;
   margin: 0 0 28px;
+}
+
+.about-col a:hover {
+  text-decoration: underline;
 }
 
 .footer-top a {

@@ -172,73 +172,181 @@ form.example button {
 
   
 /*Nav lower*/
-.lower-header {
-    background-color: #333645;
-}
-
-.menu{
-    position: relative;
+#navlower{
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    margin-top: 20px;
+    height: 99px;
+    background-color:#333645; 
+    justify-content:center;
+    border-bottom: 1px solid #999aa2;
 }
-.menu li{
-    border-left: 1px solid hsla(0,0%,100%,.1);
-    border-right: 1px solid rgba(0,0,0,.25);
+#navlower a{
+    font-size: 16px;
+    color: #fff;
     text-align: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-}
-
-.menu li a{
-    position: relative;
-    display:block;
-    padding: 20px;
-    color: #fff;
-    flex-direction: column;
-    align-items: center;
+    text-decoration: none;
     text-transform: uppercase;
 }
+.subnavlower{
+    overflow: hidden;
+}
+.subnavlower .lower-nav-btn{
+    display: flex;
+    font-size: 18px;
+    border-left: 1px solid rgba(0,0,0,.25);
+    border-right: 1px solid hsla(0,0%,100%,.1);
+    border-top: none;
+    justify-content: center;
+    color: white;
+    background-color: transparent;
+    font-family: poppins, sans-serif;
+    span{
+        font-size: 10px;
+        padding: 5px 0 1px;
+        line-height: .3;
+    }
 
-
-.menu li a small{
-    display:block;
-    font-size: .625rem;
-    padding-bottom: 1px;
+    .lower-nav-bar-tile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 99px;
+        width: 200px;
+        .fas{
+            font-size: 20px;
+            margin: 5px auto 8px;
+        }
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.Web-nav{
+    border-left: 1px solid #484a58;
+    .fas{
+        color: #926fb1;
+    }
+    &:hover{
+        background-color: #926fb1;
+        .fas{
+            color: #fff;
+        }
+    }
 }
 
-.menu li a span{
-    display:block;
-    font-size: 1.438rem;
-    padding-bottom: 10px;
-}
-.web i {
-    color: #926fb1;
+.IT-nav{
+    .fas{
+        color: #4183d7;
+    }
+    &:hover{
+        background-color: #4183d7;
+        .fas{
+            color: #fff;
+        }
+    }
 }
 
-.it i{ 
-    color: #4183d7;      
+.Telecoms-nav{
+    .fas{
+        color: #d64541;
+    }
+    &:hover{
+        background-color: #d64541;
+        .fas{
+        color: #fff;
+        }
+    }
 }
-.telecoms .iconify{
-    color: #d64541;
-    font-size: 2rem;
+
+.Software-nav{
+    .fas{
+        color: #67809f;
+    }
+    &:hover{
+        background-color: #67809f;
+        .fas{
+            color: #fff;
+        }
+    }
 }
-.bespoke i{
-    color: #67809f;
+
+.Digital-nav{
+    .fas{
+        color: #2ecc71;
+    }
+    &:hover{
+        background-color: #2ecc71;
+        .fas{
+        color: #fff;
+        }
+    }
 }
-.digital i{
-    color: #2ecc71;
+
+.Cyber-nav{
+    border-right: 1px solid rgba(0,0,0,.25);
+    .fas{
+        color: #f62459;
+    }
+    &:hover{
+        background-color: #f62459;
+        .fas{
+        color: #fff;
+        }
+    }
 }
-.cyber i{
-    color: #f62459;
+.subnavlower{
+    .Web-dropdown{
+        background-color: #7e57a0;
+    }
+    .IT-dropdown{
+        background-color: #2a6ec6;
+    }
+    .Telecoms-dropdown{
+        background-color: #bc2c28;
+    }
+    .Software-dropdown{
+        background-color: #566c88;
+    }
+    .Marketing-dropdown{
+        background-color: #25a25a;
+    }
+    .Cyber-dropdown{
+        background-color: #de093f;
+    }
 }
+/*Hidden nav*/
+.second-nav-links{
+    display: none;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    z-index: 1;
+    top: 220px;
+    width: 100vw;
+    height: 44px;
+    font-size: 10px;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+.second-nav-links a{
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    &:after{
+        content: "-";
+        padding-left: 35px;
+  		padding-right: 35px;
+    }
+}
+.subnavlower:hover .second-nav-links{
+    display: flex;
+    justify-content: center;
+
+}
+
 /*Banner image*/
 
 .banner-image {
@@ -275,6 +383,10 @@ form.example button {
     font-size: 1.25rem;
     border-radius: 5px;
     cursor: pointer;
+}
+.centered button:hover{
+    background-color: #26ab5f;
+    border-color: #26ab5f;
 }
 /*Main services*/ 
 .main-services{
@@ -774,6 +886,12 @@ background-color: #26ab5f;
 	line-height: 32px;
 	width: 100%;
 }
+.info{
+    font-weight: 600;
+	color: #333645;
+	line-height: 32px;
+	width: 100%;
+}
 .required{
     color: #d64541;
 }
@@ -937,6 +1055,9 @@ padding: 47px 0 43px;
 .footer-top ul{
     padding: 0;
     margin: 0 0 28px;
+}
+.about-col a:hover{
+text-decoration: underline;
 }
 .footer-top a{
     display: inline-block;
