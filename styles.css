@@ -247,7 +247,7 @@ form.example button {
   display: flex;
   width: 100vw;
   margin-top: 20px;
-  height: 99px;
+  height: 110px;
   background-color: #333645;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -300,7 +300,7 @@ form.example button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 99px;
+  height: 110px;
   width: 200px;
 }
 
